@@ -1,0 +1,1823 @@
+/* #252525 */
+/* #128c7e */
+/* #d13047 */
+/* logo #c96392 */
+/* logo #c96392 */
+/* iconos redes */
+/* iconos redes */
+/* iconos redes */
+/* iconos redes */
+ul.iconos2 {
+  position: relative;
+  display: flex;
+}
+
+li.iconos3 {
+  list-style: none;
+}
+
+ul.iconos2 li.iconos3 a {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 30px;
+  border-radius: 50%;
+  color: #e2e2e2;
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2),
+    2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+ul.iconos2 li.iconos3 a:hover {
+  color: #999;
+  transform: translateY(-20px);
+  box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2),
+    2px 24px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul.iconos2 li.iconos3 a:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+ul.iconos2 li.iconos3 a .fa {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+ul.iconos2 li.iconos3:nth-child(1) a:before {
+  background: #1877f2;
+}
+
+ul.iconos2 li.iconos3:nth-child(2) a:before {
+  background: #25d366;
+}
+
+ul.iconos2 li.iconos3:nth-child(3) a:before {
+  background: #c32aa3;
+}
+
+/* iconomenu */
+/* iconomenu */
+/* iconomenu */
+/* iconomenu */
+.containermenu,
+.button,
+.navdelmenu {
+  position: absolute;
+}
+
+.containermenu {
+  top: 10%;
+  left: 92%;
+ 
+}
+
+#toggle {
+  display: none;
+}
+
+.button {
+  z-index: 999;
+  width: 43px;
+  height: 40px;
+  background: #252525;
+  border-radius: 100%;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.button:before {
+  position: absolute;
+  top: 20px;
+  left: 9px;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  transform: rotate(90deg);
+}
+
+.button:after {
+  position: absolute;
+  top: 20px;
+  left: 9px;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background: #fff;
+}
+
+.navdelmenu {
+  transform: translateY(10%);
+  opacity: 0;
+  top: 13px;
+  left: -242px;
+  transition: all 0.6s ease-in-out;
+  background: white;
+  width: 300px;
+  border-radius: 20px;
+  transform: translateY(0%);
+  box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navdelmenu a {
+  text-align: center;
+  display: block;
+  margin: 20px 0;
+  color: #c96392;
+  text-decoration: none;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 300ms;
+}
+
+.navdelmenu a:hover {
+  color: #252525;
+}
+
+#toggle:checked ~ .navdelmenu {
+  opacity: 1;
+  transform: translateY(10%);
+}
+
+#toggle:checked ~ .button {
+  transform: rotate(135deg);
+  box-shadow: 0 0 0 0 transparent;
+}
+
+/* EL INICIO */
+/* EL INICIO */
+/* EL INICIO */
+/* EL INICIO */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.gridDelNav {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  background-color: #fff;
+  height: 5rem;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  justify-content: center;
+}
+
+.almamialogo {
+  display: inline-flex;
+  flex: row;
+  vertical-align: middle;
+}
+
+h3.almamialogo1 {
+  font-size: 2rem;
+  margin-top: 2.500rem;
+  color: rgb(34, 34, 34);
+  font-family:'Oswald', sans-serif;
+}
+h3.almamialogo1:hover {
+  border-bottom: 1px solid gray;
+
+ 
+}
+
+.logoalma {
+  height: 5.5rem;
+  margin: 6px 6px 6px 6px;
+  padding-bottom: 10px;
+  font-weight: 100;
+  vertical-align: middle;
+  border-radius: 6px;
+}
+
+.bordernav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+}
+
+a.botonDeWhatsapp {
+  background-color: #128c7e;
+  color: black;
+  border-radius: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.25rem;
+  min-width: 9.375rem;
+  height: 3.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.03125rem;
+  color: #ffffff;
+  border-radius: 1.875rem;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  text-align: center;
+  margin-top: 1.5rem;
+  height: 2.5rem;
+  border: 2px black solid;
+  animation-name: aparecer;
+  animation-duration: 1s;
+}
+
+a.botonDeWhatsapp:hover {
+  background-color: #083f38;
+}
+
+a.botonDeInstagram {
+  background-color: #d13047;
+  color: black;
+  border-radius: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.25rem;
+  min-width: 9.375rem;
+  height: 3.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.03125rem;
+  color: #ffffff;
+  border-radius: 1.875rem;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  text-align: center;
+  margin-top: 1.5rem;
+  height: 2.5rem;
+  border: 2px black solid;
+  animation-name: aparecer;
+  animation-duration: 1s;
+  margin-left: 10px;
+}
+
+a.botonDeInstagram:hover {
+  background-color: #741826;
+}
+
+.bordernav1 {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.bordernav3 {
+  margin-right: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+li.home {
+  list-style: none;
+  padding: 0 70px 0 70px;
+  margin-bottom: 2rem;
+ 
+}
+
+a.homeLi:hover {
+  color: gray;
+  border-bottom: 1px gray solid;
+  border-top: 1px gray solid;
+  
+}
+
+a.homeLi {
+  display: flex;
+  color: black;
+  text-decoration: none;
+  font-family: Helvetica;
+  font-size: 1.563rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+section.sectionAlmaMia {
+  width: 100%;
+  height: 1.875rem;
+  background-color: #c96392;
+  animation-name: animationsection;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes animationsection {
+  0% {
+    background-color: #c96392;
+  }
+  50% {
+    background-color: #252525;
+  }
+}
+
+h1.elHdeAlmamia {
+  font-size: 1.563rem;
+  color: white;
+  text-align: center;
+  height: 3rem;
+  animation-name: aparecer;
+  animation-duration: 3s;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h6.random {
+  background: linear-gradient(to bottom, #fff, transparent);
+  font-size: 1.875rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+@font-face {
+  src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2")
+    format("woff2");
+  font-family: "Meta";
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+/* FOOTER */
+/* FOOTER */
+div.gridfooter {
+  display: grid;
+  grid-template-rows: 20px;
+  grid-template-columns: auto auto;
+  background-color: #524a4a;
+}
+
+footer {
+ 
+  color: #fff;
+  text-align: center;
+  height: 7rem;
+  background-color: #524a4a;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+a.iconoFooter {
+ 
+  display: inline-flex;
+  padding: 1.400rem;
+ 
+}
+
+p.textoDelFootere {
+  padding: 1rem;
+  color: #fff;
+  font-size: 1.300em;
+
+}
+
+.buttoniconheader {
+  display: inline-flex;
+  color: white;
+}
+
+.icon-facebook {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.icon-instagram {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.icon-whatsapp {
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* bottom */
+/* SUCURSALES MAPAS */
+/* SUCURSALES MAPAS */
+/* SUCURSALES MAPAS */
+/* SUCURSALES MAPAS */
+/* SUCURSALES MAPAS */
+h5.maps {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+
+}
+
+p.sucursalesa {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+div.ubicacionDeSucursales iframe {
+  display: block;
+  height: 25rem;
+  width: 50%;
+  border-width: 0px;
+  margin: 0 auto;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  animation-name: aparecer;
+  animation-duration: 10s;
+  transition: 1s ease;
+}
+
+div.ubicacionDeSucursales2 iframe {
+  display: block;
+  height: 25rem;
+  width: 50%;
+  border-width: 0px;
+  margin: 0 auto;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  animation-name: aparecer;
+  animation-duration: 10s;
+  transition: 1s ease;
+}
+
+div.ubicacionDeSucursales3 iframe {
+  position: relative;
+  float: center;
+  height: 20rem;
+  width: 50%;
+  border-width: 0px;
+  margin: 0px;
+  left: 32.5rem;
+  border-radius: 1rem;
+  margin-bottom: 5rem;
+  animation-name: aparecer;
+  animation-duration: 10s;
+  -webkit-transition: margin 1s ease;
+  -moz-transition: margin 1s ease;
+  -o-transition: margin 1s ease;
+  -ms-transition: margin 1s ease;
+  transition: margin 1s ease;
+}
+
+/* efecto card */
+/* efecto card */
+.gridtarjetas {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-auto-columns: 1fr;
+  justify-content: center;
+ 
+}
+
+.card1 {
+  margin: 0.500rem;
+  position: relative;
+  width: 600px;
+  height: 350px;
+  background: #252525;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  transition: 0.5s;
+  border: 1px black solid;
+  max-width: 100%;
+}
+
+.card1 .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card1 .circle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  clip-path: circle(120px at center);
+  transition: 0.5s;
+}
+
+.card1:hover .circle:before {
+  background: #c96392;
+  clip-path: circle(400px at center);
+}
+
+.card1 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  pointer-events: none;
+  transition: 0.8s;
+}
+
+.card1:hover img {
+  left: 72%;
+  height: 500px;
+}
+
+.card1 .contentscard {
+  position: relative;
+  width: 50%;
+  left: 20%;
+  padding: 20px 20px 20px 40px;
+  visibility: hidden;
+}
+
+.card1:hover .contentscard {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.card1 .contentscard h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 1em;
+  margin-bottom: 10px;
+}
+
+.card1 .contentscard .eltextodelcard {
+  color: #fff;
+}
+
+.card1 .contentscard a {
+  position: relative;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #fff;
+  color: #111;
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* media  */
+/* media  */
+/* media  */
+
+
+@media only screen and (max-width: 480px) {
+  li.home {
+    visibility: hidden;
+  }
+  .botonDeInstagram {
+    visibility: hidden;
+  }
+  .botonDeWhatsapp {
+    visibility: hidden;
+  }
+  .bordernav {
+    text-align: right;
+  }
+  a {
+    font-size: 20px;
+    margin: 1.6rem;
+  }
+  
+  .gridDelNav {
+    height: 3em;
+    top: 0;
+  }
+  .logoalma {
+    height: 7.5rem;
+    padding: auto;
+    padding-bottom: 80px;
+  }
+ 
+  h6 {
+    visibility: hidden;
+  }
+  ul.iconos2 {
+    visibility: hidden;
+  }
+  .gridtarjetas {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    
+  }
+  .card1 {
+    margin: 0 auto;
+    margin-top: 3px;
+   margin-bottom:3px;
+   height: 50%;
+   width: 50%;
+  }
+  div.ubicacionDeSucursales iframe {
+    display: block;
+    height: 15rem;
+    width: 50%;
+    border-width: 0px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    animation-name: aparecer;
+    animation-duration: 10s;
+    transition: 1s ease;
+  }
+  a.iconoFooter {
+ 
+    display: inline-flex;
+    padding: 0rem;
+   
+  }
+  p.textoDelFootere {
+    padding: 1rem;
+    color: #fff;
+    font-size: 0.300em;
+  
+  }
+  .gridtarjetas {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-columns: 1fr;
+    justify-content: center;
+   
+  }
+
+  
+}
+@media only screen and (min-width: 1469px) {
+.containermenu {
+  visibility: hidden;
+}}
+@media only screen and (min-width: 1447px){
+.containermenu {
+  visibility: hidden;
+}}
+@media only screen and (max-width: 1446px) {
+ 
+ 
+  li.home {
+    visibility: hidden;
+  }
+  .botonDeInstagram {
+    visibility: hidden;
+  }
+  .botonDeWhatsapp {
+    visibility: hidden;
+  }
+  .bordernav {
+    text-align: right;
+  }
+
+  
+
+  .gridDelNav {
+    height: 3em;
+    top: 0;
+  }
+  .logoalma {
+    height: 7.5rem;
+    padding: auto;
+    padding-bottom: 80px;
+  }
+  h6 {
+    visibility: hidden;
+  }
+  ul.iconos2 {
+    visibility: hidden;
+  }
+  .gridtarjetas {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    grid-template-columns: auto auto;
+    
+  }
+
+  .card1 {
+    margin: 0 auto;
+   margin-top: 3px;
+   margin-bottom:3px
+  }
+  .fotocard {
+    width: 25%;
+    height: 50%;
+  }
+  .card1:hover img {
+    left: 72%;
+    height: 400px;
+    width: 220px;
+  }
+  .circle
+  {
+    width: 50%;
+    height: 50%
+  }
+  div.ubicacionDeSucursales iframe {
+    display: block;
+    height: 15rem;
+    width: 70%;
+    border-width: 0px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    animation-name: aparecer;
+    animation-duration: 10s;
+    transition: 1s ease;
+  }
+  div.ubicacionDeSucursales2 iframe {
+    display: block;
+    height: 15rem;
+    width: 70%;
+    border-width: 0px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    animation-name: aparecer;
+    animation-duration: 10s;
+    transition: 1s ease;
+  }
+  a.iconoFooter {
+ 
+    display: inline-flex;
+    padding: 0rem;
+   
+  }
+  p.textoDelFootere {
+    padding: 1rem;
+    color: #fff;
+    font-size: 1.100em;
+  
+  }
+  h3.almamialogo
+  {
+    margin-top: 3rem;
+  }
+  
+  
+}
+@media only screen and (max-width: 1868px) {
+ 
+ 
+
+ 
+  .circle
+  {
+    width: 50%;
+    height: 50%
+  }
+  div.ubicacionDeSucursales iframe {
+    display: block;
+    height: 15rem;
+    width: 70%;
+    border-width: 0px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    animation-name: aparecer;
+    animation-duration: 10s;
+    transition: 1s ease;
+  }
+  div.ubicacionDeSucursales2 iframe {
+    display: block;
+    height: 15rem;
+    width: 70%;
+    border-width: 0px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    animation-name: aparecer;
+    animation-duration: 10s;
+    transition: 1s ease;
+  }
+  a.iconoFooter {
+ 
+    display: inline-flex;
+    padding: 1rem;
+   
+  }
+  p.textoDelFootere {
+    padding: 1rem;
+    color: #fff;
+    font-size: 1.100em;
+  
+  }
+  
+  
+}
+
+/* FOTO PRINCIPAL */
+.parallax {
+  height: 31.25rem;
+  background-image: url("../imagenes/alma2mia.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0 30px 0 30px;
+  z-index: 998;
+}
+
+.grid3 {
+  /* grid-template-columns: 0% auto 0%; */
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax 15rem 0.1fr);
+  grid-auto-flow: dense;
+  grid-auto-rows: 22rem;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin: 5px;
+}
+
+p.textoDelParallax {
+  line-height: 40px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: 0px 6.25rem 0 6.25rem;
+  background-color: #252525;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+/* tabla */
+table.tabla {
+  background-color: gray;
+  float: center;
+  text-align: center;
+  width: 100%;
+  border-radius: 18px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+/* formulario */
+div.elFormulario {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  text-align: center;
+  margin: top 10rem;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  height: 50%;
+  float: center;
+}
+
+/* contacto */
+div.contactoAntares {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* redes */
+div.estasSonMisRedes {
+  color: red;
+  text-align: right;
+}
+
+div.estasSonMisRedes a {
+  font-size: 2rem;
+  color: red;
+  text-align: right;
+}
+
+div.estasSonMisRedes h1 {
+  color: red;
+  text-align: left;
+  font-size: 2rem;
+}
+
+/* Video% */
+#myVideo {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -10;
+}
+
+/* hvideo */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  z-index: -10;
+}
+
+/* Bandas */
+div.bandasDeMusica {
+  text-align: left;
+  margin-left: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+div.bandasDeMusica a {
+  color: red;
+}
+
+div.bandasDeMusica dt {
+  color: black;
+  font-size: 1.5rem;
+  letter-spacing: 1rem;
+}
+
+div.bandasDeMusica li {
+  color: red;
+}
+
+.padre {
+  background-color: red;
+  height: 30rem;
+  width: 50rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hijo {
+  position: absolute;
+  height: 40rem;
+  overflow: hidden;
+}
+
+li.inicioHome {
+  text-align: center;
+  font-size: 2rem;
+  height: 1rem;
+}
+
+div.eldt {
+  margin-top: 1rem;
+  padding-top: 3rem;
+}
+
+div.headerDeInicio {
+  z-index: 0;
+}
+
+h1.elhDelFormulario {
+  margin-top: 10rem;
+}
+
+/* fotos galeria */
+.gridFotos {
+  display: grid;
+  grid-template-rows: 60rem 1fr 1fr;
+  grid-template-columns: 10% auto 10%;
+  grid-column-gap: 5px;
+  grid-row-gap: 1px;
+}
+
+.fotosGaleria1 {
+  margin: 1rem;
+  border: 10px white solid;
+  overflow: hidden;
+  justify-content: center;
+}
+
+div.fotosDeGaleria {
+  display: flex;
+  margin: 10px;
+}
+
+img.fotosGal {
+  margin: 10px;
+}
+
+div.fotosDeGaleria2 {
+  display: flex;
+  margin: 10px;
+  flex-direction: row-reverse;
+}
+
+img.fotosGal2 {
+  margin: 10px;
+}
+
+div.fotosDeGaleria3 {
+  display: flex;
+  margin: 10px;
+  flex-direction: row;
+}
+
+img.fotosGal3 {
+  margin: 10px;
+}
+
+div.fotosDeGaleria4 {
+  display: flex;
+  margin: 10px;
+  flex-direction: row-reverse;
+}
+
+img.fotosGal4 {
+  margin: 10px;
+}
+
+div.fotosDeGaleria5 {
+  display: flex;
+  margin: 10px;
+  flex-direction: row;
+}
+
+.animacionCircular a {
+  padding: 50px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* grid de contacto */
+.grid {
+  display: grid;
+  grid-gap: 1rem;
+  margin-left: 1rem;
+  /* 2 columnas */
+  grid-template-columns: 300px 100px;
+  /* 2 filas */
+  grid-template-rows: 40px 100px;
+  margin-top: 5rem;
+}
+
+.gridstest {
+  border: 1px #fff solid;
+  background-color: pink;
+}
+
+/* galeria fotos */
+.gridfotosgal {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  grid-column-gap: 5px;
+  grid-row-gap: 1px;
+}
+
+img.fotosgal {
+  margin: 1rem;
+  width: auto;
+  height: auto;
+}
+
+/*SIDEPAN*/
+.sidepan img {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 5px;
+  grid-row-gap: 1px;
+  margin-left: 0px;
+  -webkit-transition: margin 1s ease;
+  -moz-transition: margin 1s ease;
+  -o-transition: margin 1s ease;
+  -ms-transition: margin 1s ease;
+  transition: margin 1s ease;
+}
+
+.sidepan img:hover {
+  margin-left: -200px;
+}
+
+.margin3 {
+  margin: 55px 5px 5px 55px;
+}
+
+.scroll-animations-example > .scrollsection {
+  padding: 10vh 10vh 10vh 10vmax;
+  min-width: 550vh;
+}
+
+.scroll-animations-example > .scrollsection > .item {
+  display: inline-block;
+  position: relative;
+  margin: 0 -30vh 0 3vh;
+}
+
+.scroll-animations-example > .scrollsection > .item::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.scroll-animations-example > .scrollsection > .item.-big {
+  height: 80vh;
+  width: 60vh;
+}
+
+.scroll-animations-example > .scrollsection > .item.-big.-horizontal {
+  height: 60vh;
+  width: 80vh;
+}
+
+.scroll-animations-example > .scrollsection > .item.-normal {
+  height: 60vh;
+  width: 45vh;
+  z-index: 1;
+}
+
+.scroll-animations-example > .scrollsection > .item.-normal.-horizontal {
+  height: 45vh;
+  width: 60vh;
+}
+
+.scroll-animations-example > .scrollsection > .item.-normal:nth-of-type(3n) {
+  bottom: 5vh;
+}
+
+.scroll-animations-example > .scrollsection > .item.-normal:nth-of-type(4n) {
+  bottom: -5vh;
+}
+
+.scroll-animations-example > .scrollsection > .item.-small {
+  height: 40vh;
+  width: 30vh;
+  z-index: 2;
+}
+
+.scroll-animations-example > .scrollsection > .item.-small.-horizontal {
+  height: 30vh;
+  width: 40vh;
+}
+
+.scroll-animations-example > .scrollsection > .item.-small:nth-of-type(3n) {
+  bottom: 13vh;
+}
+
+.scroll-animations-example > .scrollsection > .item.-small:nth-of-type(4n) {
+  bottom: -13vh;
+}
+
+.scroll-animations-example > .scrollsection > .item > .image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: grayscale(1);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(0) translateY(0) scale(1);
+  transition: filter 0.3s ease, opacity 1s ease, transform 1s ease;
+}
+
+.scroll-animations-example > .scrollsection > .item:nth-of-type(4n) > .image {
+  transform: translateX(-30vh) translateY(-30vh) scale(0.8);
+  transition-delay: 0;
+}
+
+.scroll-animations-example
+  > .scrollsection
+  > .item:nth-of-type(4n - 1)
+  > .image {
+  transform: translateX(30vh) translateY(30vh) scale(0.8);
+  transition-delay: 0.05s;
+}
+
+.scroll-animations-example
+  > .scrollsection
+  > .item:nth-of-type(4n - 2)
+  > .image {
+  transform: translateX(-30vh) translateY(30vh) scale(0.8);
+  transition-delay: 0.1s;
+}
+
+.scroll-animations-example
+  > .scrollsection
+  > .item:nth-of-type(4n - 3)
+  > .image {
+  transform: translateX(-30vh) translateY(-30vh) scale(0.8);
+  transition-delay: 0.15s;
+}
+
+.scroll-animations-example > .scrollsection > .item > .image.-active {
+  transform: translateX(0) translateY(0) scale(1);
+  opacity: 0.8;
+  pointer-events: auto;
+  transition: filter 0.3s ease, opacity 1s ease, transform 1s ease;
+}
+
+.scroll-animations-example > .scrollsection > .item > .image.-clicked {
+  transform: translateX(0) translateY(0) scale(5);
+  opacity: 0;
+  pointer-events: auto;
+  transition: filter 0.3s ease, opacity 1s ease, transform 1s ease;
+}
+
+.scroll-animations-example > .scrollsection > .item > .image.-active:hover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: grayscale(0);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.fake-ui {
+  font-size: 0;
+}
+.fake-ui > .logo {
+  position: fixed;
+  top: 2vh;
+  left: 2vh;
+  height: 3vh;
+  width: 2.5vh;
+  border: solid 1vh #999;
+}
+.fake-ui > .nav {
+  position: fixed;
+  top: 2vh;
+  right: 2vh;
+}
+.fake-ui > .nav > .item {
+  background: #999;
+  display: inline-block;
+  height: 2vh;
+  width: 10vh;
+  margin-left: 2vh;
+}
+.fake-ui > .footer {
+  position: fixed;
+  bottom: 3vh;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2vh;
+  width: 40vh;
+  background: #999;
+}
+
+/* FOTOS INSTAGRAM */
+/* FOTOS INSTAGRAM */
+/* FOTOS INSTAGRAM */
+/* FOTOS INSTAGRAM */
+.todasLasFotos {
+  display: flex;
+  flex-direction: row;
+  float: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+div.fotosDeInstagram {
+  top: 0;
+  margin-left: 6rem;
+}
+
+div.fotosDeInstagram2 {
+  margin-left: 10px;
+}
+
+div.fotosDeInstagram3 {
+  margin-left: 10px;
+}
+
+div.fotosDeInstagram4 {
+  margin-left: 10px;
+}
+
+div.fotosDeInstagram5 {
+  margin-left: 10px;
+}
+
+div.fotosDeInstagram6 {
+  margin-left: 10px;
+  margin-right: 6rem;
+}
+
+/* #252525 */
+/* #128c7e */
+/* #d13047 */
+/* logo #c96392 */
+/* logo #c96392 */
+* {
+  top: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #252525;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width:100%
+  
+}
+
+img {
+  vertical-align: middle;
+}
+
+.tarjeta-1 {
+  background-color: #252525;
+  max-width: 750px;
+  height: 350px;
+  margin: 2rem;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.tarjeta-2 {
+  background-color: #d13047;
+  max-width: 550px;
+  height: 350px;
+  margin: 2rem;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.tarjeta-3 {
+  background-color: #252525;
+  max-width: 750px;
+  height: 350px;
+  margin: 2rem;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.tarjeta-4 {
+  background-color: #252525;
+  max-width: 550px;
+  height: 350px;
+  margin: 2rem;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  left: 25rem;
+}
+
+.tarjeta-5 {
+  background-color: #252525;
+  max-width: 750px;
+  height: 350px;
+  margin: 2rem;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  left: 25rem;
+}
+
+.box_uno {
+  background-color: #4285f4;
+  width: 360px;
+}
+
+.box_dos {
+  background-color: #33d374;
+  width: 310px;
+}
+
+.box_tres {
+  background-color: #4285f4;
+  width: 410px;
+}
+
+.box_cuatro {
+  background-color: #33d374;
+  width: 205.71429px;
+}
+
+ul.iconos2 li.iconos3:nth-child(1) a:beforeinstagram {
+  background-color: #c32aa3;
+}
+
+ul.iconos2 li.iconos3:nth-child(1) a:beforefacebook {
+  background-color: #1877f2;
+}
+
+ul.iconos2 li.iconos3:nth-child(1) a:beforewhatsapp {
+  background-color: #25d366;
+}
+
+body.fondocolor {
+  background-color: #252525;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+#contact {
+  width: 100%;
+  height: 100%;
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 300 60px "Oswald", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  max-width: 840px;
+}
+
+/* Left contact page */
+.form-horizontal {
+  /*float: left;*/
+  max-width: 400px;
+  font-family: "Lato";
+  font-weight: 400;
+}
+
+.form-control,
+textarea {
+  max-width: 400px;
+  background-color: #000;
+  color: #fff;
+  letter-spacing: 1px;
+  margin: 0.200rem;
+}
+
+.send-button {
+  margin-top: 15px;
+  height: 34px;
+  width: 400px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.alt-send-button {
+  width: 400px;
+  height: 34px;
+  transition: all 0.2s ease-in-out;
+}
+
+.send-text {
+  display: block;
+  margin-top: 10px;
+  font: 700 12px "Lato", sans-serif;
+  letter-spacing: 2px;
+}
+
+.alt-send-button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+
+/* Begin Right Contact Page */
+.direct-contact-container {
+  max-width: 400px;
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+.list-item {
+  line-height: 4;
+  color: #aaa;
+}
+
+.contact-text {
+  font: 300 18px "Lato", sans-serif;
+  letter-spacing: 1.9px;
+  color: #bbb;
+}
+
+.place {
+  margin-left: 62px;
+}
+
+.phone {
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+
+.contact-text a {
+  color: #bbb;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Social Media Icons */
+.social-media-list {
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social-media-list li a {
+  color: #fff;
+}
+
+.social-media-list li {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgb(27, 27, 27);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-media-list li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-media-list li:hover {
+  background-color: gray;
+}
+
+.social-media-list li:hover:after {
+  opacity: 1;
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+}
+
+.social-media-list li:hover a {
+  color: #000;
+}
+
+.copyright {
+  font: 200 14px "Oswald", sans-serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+hr {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 850px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .direct-contact-container,
+  .form-horizontal {
+    margin: 0 auto;
+  }
+
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }
+  .social-media-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+  .social-media-list li:after {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+
+  .gridtarjetas {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  
+    
+  }
+  
+  
+  
+  
+}
+
+@media screen and (max-width: 569px) {
+  .direct-contact-container,
+  .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }
+  .form-control,
+  textarea {
+    margin: 0 auto;
+  }
+
+  .name,
+  .email,
+  textarea {
+    width: 280px;
+  }
+
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }
+  .social-media-list {
+    left: 0;
+  }
+  .social-media-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+  .social-media-list li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+  a {
+    font-size: 20px;
+    margin: -15px 0 0 10px;
+    
+  }
+  h3.almamialogo1 {
+    font-size:1em;
+    
+      
+    }
+    .gridtarjetas {
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    
+      
+    }
+    
+
+}
+
+@media screen and (max-width: 420px) {
+  .gridtarjetas {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  
+    
+  }
+  
+  a {
+    font-size: 20px;
+    margin: -15px 0 0 10px;
+    
+  }
+  h3.almamialogo1 {
+    font-size:0.800em;
+    
+      
+    }
+    .send-button {
+    width: 99%;
+  }
+}
+.letraslogo {
+  text-decoration: none;
+  
+}
+a {
+  
+  margin: -13px 0 0 10px;
+  
+}
+  
+/* informacion */
+.h1informacion {
+  color: #fff;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+.pinformacion {
+  color: #fff;
+  font-size: 1.300em;
+  letter-spacing:3px;
+  text-align: center;
+  word-spacing: 2px;
+  margin: auto;
+}
+.logoinfo {
+  height: 20%;
+  width: 20%
+}
+.informacion1
+{
+  display: flex;
+}
+.h2info
+{
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray
+}
+.h3preguntas{
+  color: #fff;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+div.gridpreguntas 
+{
+  display: grid;
+  grid-template-columns:25rem auto 25rem;
+  grid-template-rows: auto;
+  
+
+}
+
+h4.h4horario  {
+  color: #fff;
+  text-align: center;
+}
+p.phorario
+{
+  color: #fff;
+  text-align: center;
+  font-size:1em
+}
+.Metodosdepago {
+  margin: 30px;
+  
+}
+
+.gridpreguntas :hover
+{
+  
+  
+ 
+  animation-duration: 1s;
+  transition: 0.5s ease;
+  
+ 
+}
+
